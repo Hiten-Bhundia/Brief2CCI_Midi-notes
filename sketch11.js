@@ -141,10 +141,10 @@ function resetPlayback(){
 // POSITION UI
 // --------------------
 function positionUI(){
-  toggleButton.position(850, 820);
-  scrubSlider.position((windowWidth-scrubSlider.width)/2,height+20);
-  buttonIndividual.position(700, 820);
-  buttonJoint.position(980, 820);
+  toggleButton.position(width/2, height - 50);
+  scrubSlider.position((windowWidth-scrubSlider.width)/2 + 40,height+20);
+  buttonIndividual.position(width/2- 175, height - 50);
+  buttonJoint.position(width/2 + 150, height - 50);
 }
 
 function windowResized(){
@@ -251,11 +251,11 @@ function drawHarmonyPie(x, y, radius, stats){
   let notArc = stats.notInHarmony * TWO_PI;
   arc(x, y, radius*2, radius*2, startAngle, startAngle+notArc);
 
-  // Results label
-  fill(0);
-  textSize(14);
-  fill(0);
-  text("RESULTS:", 1435, 350);
+  // // Results label
+  // fill(0);
+  // textSize(14);
+  // fill(0);
+  // text("RESULTS:", 1435, 350);
 
 
   // label for smaller pie chart to show the harmoy percentages
