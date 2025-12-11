@@ -1,3 +1,5 @@
+
+//memika was here
 let MidiData1 = null; // individualgroup.json
 let MidiData2 = null; // jointtogether.json
 let currentData = null;
